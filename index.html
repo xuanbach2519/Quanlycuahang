@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="tabs">
+            <div class="tab-item active">Trang chủ</div>
+            <div class="tab-item">Đơn hàng</div>
+            <div class="tab-item">Khách hàng</div>
+            <div class="tab-item">Kho hàng</div>
+            <div class="dropdown">
+                <div class="tab-item">Tài khoản</div>
+                <div class="dropdown-content">
+                    <button class="attribute" onclick="window.location.href='/Quanlycuahang/bach/updateProfile/updateProfile.html';">Cập nhật hồ sơ</button>
+                    <button data-modal-target="#modal">Đổi mật khẩu</button>
+                    <button onclick="window.location.href='/Quanlycuahang/index.html';">Đăng xuất</button>
+                </div>
+
+            </div>
+    </header>
+    <main>
+        <div class="tab-content">
+            <div class="tab-pane active">
+                <div class="center">
+                    <p>Chào mừng bạn đến với trang quản lý cửa hàng cá nhân</p>
+                    <button class="start">Bắt đầu ></button>
+                </div>
+            </div>
+            <div class="tab-pane ">
+                <div class="orderPage">
+                    <nav class="opstion">
+                        <div class="box">
+                            <div class="searchBox">
+                                <input id="search" type="text">
+                                <i class="fa fa-search searchIcon" style="font-size: 24px; transform: translateX(-60px);"></i>
+                            </div>
+                            <div class="headler1">Trạng thái đơn hàng</div>
+                            <div class="headler2">Đã giao</div>
+                            <div class="headler2">Đang giao</div>
+                            <div class="headler2">Chờ giao</div>
+                        </div>
+                    </nav>
+                    <div class="listProduct">
+                        <p id="danhmuc">Danh mục sản phẩm</p>
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/orderPic.png" />
+                                <p>Hóa đơn 1</p>
+                                <p>100.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Xem</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/orderPic.png" />
+                                <p>Hóa đơn 2</p>
+                                <p>200.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Xem</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+
+                                <div>
+                                    <img class="productImg" src="/Quanlycuahang/Assest/orderPic.png" />
+                                </div>
+                                <div class="heightText">
+                                    <p>Hóa đơn 3</p>
+                                    <p>130.000 đ</p>
+                                </div>
+                                <div class="">
+                                    <button class="button button1 btn-view">Xem</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/orderPic.png" />
+                                <p>Hóa đơn 4</p>
+                                <p>240.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Xem</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/orderPic.png" />
+                                <p>Hóa đơn 5</p>
+                                <p>570.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Xem</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/orderPic.png" />
+                                <p>Hóa đơn 6</p>
+                                <p>460.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Xem</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/orderPic.png" />
+                                <p>Hóa đơn 7</p>
+                                <p>120.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Xem</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/orderPic.png" />
+                                <p>Hóa đơn 8</p>
+                                <p>600.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Xem</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/orderPic.png" />
+                                <p>Hóa đơn 9</p>
+                                <p>350.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Xem</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane">
+                <div class="orderPage">
+                    <nav class="opstion">
+                        <div class="box">
+                            <div class="searchBox">
+                                <input id="search" type="text">
+                                <i class="fa fa-search searchIcon" style="font-size: 24px; transform: translateX(-60px);"></i>
+                            </div>
+                            <div class="headler2">Đanh sách khách hàng</div>
+                            <div class="headler2">khách hàng nợ tiền</div>
+                        </div>
+                    </nav>
+                    <div class="listProduct">
+                        <p id="danhmuc">Danh khách hàng</p>
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/avtdefault.png" />
+                                <p>nguyen van a</p>
+                                <p>Sđt: 0987664701</p>
+                                <p>0 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/avtdefault.png" />
+                                <p>nguyen van b</p>
+                                <p>Sđt: 0987664702</p>
+                                <p>120.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/avtdefault.png" />
+                                <p>nguyen van c</p>
+                                <p>Sđt: 0987664703</p>
+                                <p>320.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/avtdefault.png" />
+                                <p>nguyen van d</p>
+                                <p>Sđt: 0987664704</p>
+                                <p>440.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/avtdefault.png" />
+                                <p>nguyen van e</p>
+                                <p>Sđt: 0987664705</p>
+                                <p>500.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/avtdefault.png" />
+                                <p>nguyen van f</p>
+                                <p>Sđt: 0987664706</p>
+                                <p>100.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/avtdefault.png" />
+                                <p>nguyen van g</p>
+                                <p>Sđt: 0987664707</p>
+                                <p>600.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/avtdefault.png" />
+                                <p>nguyen van h</p>
+                                <p>Sđt: 0987664708</p>
+                                <p>70.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/avtdefault.png" />
+                                <p>nguyen van 1</p>
+                                <p>Sđt: 0987664709</p>
+                                <p>300.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane">
+                <div class="orderPage">
+                    <nav class="opstion">
+                        <div class="box">
+                            <div class="searchBox">
+                                <input id="search" type="text">
+                                <i class="fa fa-search searchIcon" style="font-size: 24px; transform: translateX(-60px);"></i>
+                            </div>
+                            <div class="headler1">Danh mục sản phẩm</div>
+                            <div class="headler2">Đồ gia dụng</div>
+                            <div class="headler2">Đồ uống</div>
+                            <div class="headler2">Đồ đông lạnh</div>
+                            <div class="headler2">Bánh kẹo</div>
+                        </div>
+                    </nav>
+                    <div class="listProduct">
+                        <p id="danhmuc">Danh mục sản phẩm</p>
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/1.png" />
+                                <p>Tương Ớt Chin Su</p>
+                                <p>12.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/2.png" />
+                                <p>Mì Hảo Hảo</p>
+                                <p>3.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/3.png" />
+                                <p>Bánh chocopie</p>
+                                <p>30.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/4.png" />
+                                <p>Cá đóng hộp</p>
+                                <p>40.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/5.png" />
+                                <p>Cà phê trung nguyên</p>
+                                <p>50.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/6.png" />
+                                <p>Milo</p>
+                                <p>60.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/7.png" />
+                                <p>coca cola</p>
+                                <p>10.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/8.png" />
+                                <p>Phở bò</p>
+                                <p>6.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="productImg" src="/Quanlycuahang/Assest/9.png" />
+                                <p>Bánh đậu xanh</p>
+                                <p>30.000 đ</p>
+                                <div class="">
+                                    <button class="button button1 btn-view">Sửa</button>
+                                    <button data-modal-target="#modalConfirm" class="button button2 btn-delete">Xóa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane">
+                <div class="container">
+                    <div class="orderPage">
+                        <div class="avt" style="text-align: center">
+                            <img src="/Quanlycuahang/Assest/avtdefault.png" alt="avt" id="avata">
+                            <div>
+                                <label for="files" class="changeAvt">Thay đổi</label>
+                                <input id="files" style="display: none;" type="file">
+                            </div>
+                        </div>
+                        <div class="information">
+                            <h1>Trịnh Xuân Bách</h1>
+                            <p>Email: <a style="color: #1890ff;" href="mailto:xuanbach.2519@gmail.com">xuanbach.2519@gmail.com</a></p>
+                            <p>Số điện thoại: <a style="color: #1890ff;" href="tel:0987044428">0987044428</a></p>
+                            <p>Địa chỉ: Hà đông, Hà nội</p>
+                            <p>Ngày sinh: 25/01/1999</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title">Thay đổi mật khẩu</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="myForm">
+                    <div class="itemInput">
+                        <label>Mật khẩu cũ:</label>
+                        <input type="text" id="oldPass" name="oldPass" required><br><br>
+                    </div>
+                    <div class="itemInput">
+                        <label>Mật khẩu mới:</label>
+                        <input type="text" id="newPass" name="newPass" required><br><br>
+                    </div>
+                    <div class="itemInput">
+                        <label>Nhập lại mật khẩu :</label>
+                        <input type="text" id="reTypePass" name="reTypePass" required><br><br>
+                    </div>
+                    <div class="submit">
+                        <button class="submitChangePassword" value="Submit" onclick="change()"> Submit </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modalConfirm">
+            <div class="modal-header">
+                <div class="title">Xác nhận</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có muốn xóa sản phẩm này không?</p>
+                <div class="d-flex" style="display: flex; justify-content: flex-end;">
+                    <button data-close-button class="button2" style="margin-right: 10px;">Hủy</button>
+                    <button data-close-button class="button1 btn-confirm-delete">Có</button>
+                </div>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </main>
+    <script src="/Script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-weight: 700;
+    }
+    
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 970px;
+    }
+    
+    img {
+        border-radius: 50%;
+        max-width: 200px;
+        min-height: 200px;
+        width: 50%;
+        height: 50%;
+        margin: 5%;
+    }
+    
+    #InforForm {
+        text-align: center;
+    }
+    
+    #InforForm .profile {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #InforForm h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .avatar img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .primary-btn {
+        border-radius: 30px;
+        background: #1890ff;
+        color: white;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    #back {
+        text-align: start;
+        margin: 5%;
+    }
+    
+    #box {
+        margin: 3%;
+    }
+    
+    button {
+        height: 30px;
+        border-radius: 30px;
+        width: 200px;
+        font-size: 30px;
+        height: 40px;
+    }
+    
+    .flexDiv {
+        display: flex;
+        text-align: start;
+        align-items: center;
+    }
+    
+    .flexDiv label {
+        width: 150px;
+        margin-left: 50px;
+        margin-top: 2%;
+        margin-left: 5%;
+        font-size: 16px;
+        margin-bottom: 2%;
+    }
+    
+    .flexDiv input {
+        width: 350px;
+        height: 40px;
+        margin-left: 30%;
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-bottom: 2%;
+    }
